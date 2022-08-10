@@ -1,0 +1,15 @@
+{
+    "name": "app/music",
+    "autoload": {
+        "psr-4": {
+            "App\\Music\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alexandrehdev",
+            "email": "alexandrehldev@gmail.com"
+        }
+    ],
+    "require": {}
+}
