@@ -1,0 +1,14 @@
+/* style padrão do projeto */
+
+/* estilo padrão */
+/* animações */
+/* transitions */
+/* fonts */
+
+ @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+
+ body{
+     margin:200px;
+     padding:90px;
+ }
+
