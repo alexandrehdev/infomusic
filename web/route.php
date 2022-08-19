@@ -8,7 +8,7 @@
  });
 
  Route::redirect("/search", function(){
-     echo "procurando musica ou artista :)";
+     Service::testingSearch();
  });
 
 
