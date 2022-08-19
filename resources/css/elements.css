@@ -10,7 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: var(--main-cinza);
+    background: var(--main-grey);
     height: 40px;
     border-radius: 40px;
     padding: 10px;
@@ -40,7 +40,7 @@
 }
 
 .search-btn{
-    color: var(--main-cinza);
+    color: var(--main-grey);
     float: right;
     width: 40px;
     height: 40px;
@@ -54,4 +54,124 @@
 .search-icon{
     width: 20px;
     height: 20px;
+}
+
+/* style footer */
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: var(--main-grey);
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: var(--main-softblue);
+    top: -10px;
+}
+
+.box .content:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--main-black);
+    top: -10px;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social{
+    padding: 0 2px;
+}
+
+.left .content .social{
+    width: 40px;
+    height: 40px;
+    background: var(--main-black);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.left .content .social {
+    background: var(--main-softblue);
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.right .social{
+    margin: 20px 0 0 0;
+}
+
+.right .social a{
+    padding: 0 2px;
+}
+
+.right .social a img{
+    width: 40px;
+    height: 40px;
+    background: var(--main-grey);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.right .social a img:hover{
+    background: var(--main-softblue);
+}
+
+.right .social p {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: 100%;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        position: fixed;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
 }
