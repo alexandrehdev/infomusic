@@ -11,7 +11,7 @@ body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	background-color: #74EBD5;
-	background-image: linear-gradient(0deg, #9FACE6 25%, #74EBD5 100%);
+	background-color: var(--main-turquesa);
+	background-image: linear-gradient(0deg, var(--main-softblue) 25%, var(--main-softcian) 100%);
 }
 
