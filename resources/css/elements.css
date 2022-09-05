@@ -1,16 +1,25 @@
 /* style de elementos */
-
-.projeto{
-    text-align: center;
-    color: var(--main-black);
+.main-header{
+    background: var(--main-black);
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content:space-around;
+}    
+.content-header{
+    border-radius: 100px;
+    width: 120px;
 }
-
+.content-header img{
+    height: 90px;
+}
 .search-box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: var(--main-grey);
+    background: var(--main-white);
     height: 40px;
     border-radius: 40px;
     padding: 10px;
@@ -22,18 +31,20 @@
     outline: none;
     float: left;
     padding: 0;
-    color: var(--main-white);
+    color: var(--main-black);
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
+}
+.search-txt::placeholder{
+    color: var(--main-black);
 }
 
 .search-box:hover > .search-txt{
     width: 240px;
     padding: 0 6px;
 }
-
 
 .search-box:hover > .search-btn{
     background: var(--main-white);
@@ -63,7 +74,10 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: var(--main-grey);
+    background: var(--main-purple);
+    color: var(--main-white);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
 }
 
 .main-content{
@@ -131,48 +145,12 @@ footer{
     text-align: justify;
 }
 
-.right .social{
-    margin: 20px 0 0 0;
+.right img{
+    height: 70px;
+    float: right;
 }
 
-.right .social a{
-    padding: 0 2px;
-}
-
-.right .social a img{
-    width: 40px;
-    height: 40px;
-    background: var(--main-grey);
+.main-content h1{
+    color: red;
     text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-    border-radius: 100%;
-    padding: 5px;
-}
-
-.right .social a img:hover{
-    background: var(--main-softblue);
-}
-
-.right .social p {
-    text-align: center;
-    display: inline-block;
-    margin: 10px;
-    vertical-align: 100%;
-}
-
-@media screen and (max-width: 900px){
-    footer{
-        position: fixed;
-        bottom: 0px;
-    }
-    .main-content{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .main-content .box{
-        margin: 5px 0;
-    }
 }
