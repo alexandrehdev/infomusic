@@ -150,25 +150,14 @@ footer{
     height: 70px;
     float: right;
 }
-.main-content .info-thumb{
-    height: 800px;
-    width: 350px;
-    background:pink;
-    padding: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.main-content .info-thumb img{
-    height: 250px;
-    border: 1px transparent solid;
-    border-radius: 150px;
-}
-.main-content h1{
-    color: var(--main-white);
-    text-align: center;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bio{
-    margin: 30px;
-    color: var(--main-white);
+#goBack{
+    text-decoration: none;
+    color: var(--main-purple);
 }
+
