@@ -4,18 +4,30 @@ use App\Music\Controller\Builder;
 use App\Music\Controller\Api;
 
 class Result{
+     
+    public static function buildContent(array $content) :array{
 
-    const resultPage = "resources/elements/result.html";
+        $apiContent = [
+           "artistName" => $content["artists"][0]["strArtist"],
+           "artistBio" => $content["artists"][0]["strBiographyEN"],
+           "artistGenre" => $content["artists"][0]["strGenre"],
+           "artistThumb" => $content["artists"][0]["strArtistThumb"],
+           "artistCountry" => $content["artists"][0]["strCountry"]
+        ];
 
-    public static function replaceContent(){
-       $api = new Api();
-       $builder = new Builder();
-       $search = strtolower($builder->getSearch());
-       $apiContent = $api->buildUrlResponse($search);
-       $resultPage = file_get_contents(self::resultPage);
-
-       return str_replace("__nameArtist__", $search , $resultPage);
-
+        return $apiContent;
     }
 
+
+    public static function replaceContent() :array{
+       
+       $builder = new Builder();
+       $input = $builder->getInputValue();
+       $api = new Api();
+       $response = $api->buildUrlResponse($input);
+       $contentResult = file_get_contents($response);
+       $jsonContent = json_decode($contentResult, true);
+        
+       return self::buildContent($jsonContent);
+    }
 }

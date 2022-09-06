@@ -1,18 +1,20 @@
 /* style de elementos */
 .main-header{
-    background: var(--main-black);
     width: 100%;
     padding: 0;
     margin-top: 0;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
 }    
 .content-header{
     border-radius: 100px;
     width: 120px;
 }
 .content-header img{
-    height: 90px;
+    background: var(--main-white);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100px;
 }
 .search-box{
     position: absolute;
@@ -74,10 +76,9 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: var(--main-purple);
+    background: var(--main-black);
     color: var(--main-white);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .main-content{
@@ -149,8 +150,25 @@ footer{
     height: 70px;
     float: right;
 }
-
+.main-content .info-thumb{
+    height: 800px;
+    width: 350px;
+    background:pink;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main-content .info-thumb img{
+    height: 250px;
+    border: 1px transparent solid;
+    border-radius: 150px;
+}
 .main-content h1{
-    color: red;
+    color: var(--main-white);
     text-align: center;
+}
+
+.bio{
+    margin: 30px;
+    color: var(--main-white);
 }
