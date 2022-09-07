@@ -1,20 +1,30 @@
-/* style de elementos */
-.main-header{
-    width: 100%;
+.header{
     padding: 0;
-    margin-top: 0;
     display: flex;
-    justify-content:center;
-}    
-.content-header{
-    border-radius: 100px;
-    width: 120px;
+    justify-content: space-between;
+    padding:20px;
+    align-items:center;
+    flex-wrap: wrap;
 }
-.content-header img{
-    background: var(--main-white);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 100px;
+.header a img{
+    height: 90px;
+}
+.menu{
+   display: flex;
+}
+.menu li{
+    margin-left: 15px;
+    color: var(--main-white);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+}
+.menu li:hover{
+    color: var(--sec-purple);
+}
+.menu li a{
+    display: block;
+    padding: 10px;
 }
 .search-box{
     position: absolute;
@@ -70,94 +80,42 @@
     height: 20px;
 }
 
-/* style footer */
-
-footer{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background: var(--main-black);
-    color: var(--main-white);
-    font-size: 12px;
-}
-
-.main-content{
-    display: flex;
-}
-
-.main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
-}
-
-.box h2{
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-}
-
-.box .content:after{
-    position: absolute;
-    content: '';
-    width: 15%;
-    height: 2px;
-    background: var(--main-softblue);
-    top: -10px;
-}
-
-.box .content:before{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: var(--main-black);
-    top: -10px;
-}
-
-.left .content .social{
-    margin: 20px 0 0 0;
-}
-
-.left .content .social{
-    padding: 0 2px;
-}
-
-.left .content .social{
-    width: 40px;
-    height: 40px;
-    background: var(--main-black);
-    text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.left .content .social {
-    background: var(--main-softblue);
-}
-
-.left .content p{
-    text-align: justify;
-}
-
-.right img{
-    height: 70px;
-    float: right;
-}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container .content{
+    border-radius: 10px;
+    background: var(--main-white);
+    color: var(--main-black);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 50px;
+}
+.container .artist-description img{
+    border: 1px transparent solid;
+    border-radius: 200px;
+    height: 280px;
+    padding: 20px;
+}
+/* footer{ */
+/*     position: fixed; */
+/*     bottom: 0px; */
+/*     width: 100%; */
+/*     background: var(--main-black); */
+/*     color: var(--main-white); */
+/*     font-size: 12px; */
+/* } */
 
 #goBack{
     text-decoration: none;
-    color: var(--main-purple);
+    color: var(--main-softblue);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
 }
 
