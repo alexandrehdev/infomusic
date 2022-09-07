@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+body,ul,li,p{
 	margin: 0;
     padding: 0;
-	height: 100%;
-	width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
-    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background: url("../img/people.webp");
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-white);
 }
 
 @media screen and (max-width: 900px){
@@ -14,11 +21,11 @@ body{
        position: fixed;
        bottom: 0px;
    }
-   .main-content{
+   .container{
        flex-wrap: wrap;
        flex-direction: column;
    }
-    .main-content .box{
+    .container .box{
         margin: 5px 0;
     }
 }
