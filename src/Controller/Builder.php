@@ -6,14 +6,14 @@ class Builder{
     private $search;
 
     function __construct(){
-        $this->setSearch($_REQUEST["search"]);
+        $this->setInputValue($_REQUEST["search"]);
     }
 
-    public function getSearch() :string{
+    public function getInputValue() :string{
         return $this->search;
     }
 
-    public function setSearch($search) :void{
+    public function setInputValue($search) :void{
         $this->search = $search;
     }
 }

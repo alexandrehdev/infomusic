@@ -4,11 +4,11 @@
  use App\Music\Utils\Route;
 
  Route::redirect("/", function(){
-    Service::callHome();
+      Service::searchPage();
  });
 
- Route::redirect("/search", function(){
-     Service::testingSearch();
+ Route::redirect("/result", function(){
+     Service::showResultPage();
  });
 
 
