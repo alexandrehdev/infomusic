@@ -3,4 +3,4 @@
 
 <img src="https://i.ibb.co/pn2gmSs/infomusic.png"/>
 
-http://infomusic.infinityfreeapp.com
+[demo](http://infomusic.infinityfreeapp.com)
